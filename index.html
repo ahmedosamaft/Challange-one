@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .card {
+        width: 262px;
+        height: 515px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        display: flex;
+        border-radius: 10px;
+        align-items: center;
+        flex-flow: column;
+        padding: 20px;
+        background-color: #15273f;
+      }
+
+      body {
+        background-color: #0d1a2d;
+      }
+
+      .image {
+        width: 240px;
+        height: 50%;
+        border-radius: 10px;
+        background-size: cover;
+        background-image: url(images/image-equilibrium.jpg);
+      }
+
+      h1 {
+        color: white;
+        margin: 15px 0 5px;
+        font-size: 24px;
+      }
+
+      .description {
+        color: #94acc8;
+        flex: 1;
+      }
+
+      .cont {
+        display: flex;
+        width: 100%;
+        flex-flow: row wrap;
+        box-sizing: border-box;
+        padding: 20px;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      .content {
+        display: flex;
+        flex-flow: column wrap;
+        margin-bottom: 20px;
+      }
+
+      p {
+        flex: 1;
+        width: 100%;
+      }
+
+      .second {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        color: white;
+      }
+
+      .date {
+        display: flex;
+        align-items: center;
+        color: #94acc8;
+      }
+
+      hr {
+        border-color: #94acc8;
+      }
+
+      .coin {
+        color: #00fefb;
+        display: flex;
+        align-items: center;
+      }
+
+      .date img ,
+      .coin img{
+        margin: 0 10px 0 0;
+      }
+
+      .footer {
+        flex: 1;
+      }
+
+      .name span {
+        color: #94acc8;
+        margin: 0 2px;
+      }
+      .name {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .im {
+        width: 50px;
+        height: 50px;
+        border: 1px solid white;
+        border-radius: 50%;
+        background-image: url(./images/image-avatar.png);
+        background-size: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="image"></div>
+      <div class="cont">
+        <h1>Equilibrium #3429</h1>
+        <div class="content">
+          <div class="first">
+          <p class="description">
+            Our Equilibrium collection promotes balance and calm.
+          </p></div>
+          <div class="second">
+          <div class="coin"><img src="./images/icon-ethereum.svg" alt=""> 0.041 ETH</div>
+          <div class="date"><img src="./images/icon-clock.svg" alt=""> 3 days left</div>
+        </div></div>
+        <div class="footer">
+        <hr />
+        <div class="name"><div class="im"></div> <div class="se"><span>Creation of</span> Jules Wyvern</div></div>
+      </div></div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ahmed Osama</a>.
+    </div>
+  </body>
+</html>
